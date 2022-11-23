@@ -1,25 +1,91 @@
-header {
+*{
+
+    margin: 0;
+    list-style-type: none;
+}
+:root {
+    --back-color:rgb(204, 204, 189) ;
+    --card-color:white; 
+  }
+
+body {    background-color:var(--back-color) ;
+    margin: 0;
+    padding: 0;
     
-    background-color: rgb(18, 64, 69);
 }
 .banner {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-    height: 30vh;
-    background-color: aqua;
+  background-image: url(image1.png);
+    height: 40vh;
+    background-repeat:initial;
+    background-size: cover;
+     background-position:top;
+     background-attachment: fixed;
 }
-ul {
+
+
+h1  {
+    font-style: var(--main-color);
+    color: rgb(255, 255, 255);
+}
+ul {margin: 0;
     display: flex;
     justify-content: space-around;
 }
-li { 
-
+li {
+    color: rgb(255, 255, 255);
+    margin: 2rem;
+    font-family: 'Darker Grotesque', sans-serif;
 }
+
 nav {
-    background-color: darkgray;
-   
+    position:sticky;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgb(75, 75, 75);
+   height: 7vh;
+   margin: 0;
 }
 h1 {
+    margin-top: 5rem;
   text-align: center;
+  font-family: 'Days One', sans-serif;
+  
+}
+.banner p { text-align: center;
+    font-family: 'Darker Grotesque', sans-serif;
+    color: rgb(255, 255, 255);
+   font-size: larger;
+   margin-top: 2rem;
+}
+.card {
+    display: flex;
+    justify-content: center;
+
+}
+p {  font-family: 'Darker Grotesque', sans-serif;
+    text-align: center;
+    margin: 3rem;
+    color: black;
+    font-size: 1.3rem;
+}
+.minimap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    background-color: var(--card-color);
+    width: 80vw;
+    height: 250px;
+    border-radius: 2rem;
+    padding: 0;
+
+}
+.googlemap {
+    border-radius: 1.5rem;
+    margin: 10px;
 }
