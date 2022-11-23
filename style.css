@@ -1,0 +1,25 @@
+header {
+    
+    background-color: rgb(18, 64, 69);
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    height: 30vh;
+    background-color: aqua;
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+li { 
+
+}
+nav {
+    background-color: darkgray;
+   
+}
+h1 {
+  text-align: center;
+}
