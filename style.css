@@ -2,9 +2,11 @@
 
     margin: 0;
     list-style-type: none;
+    box-sizing: border-box;
+   
 }
 :root {
-    --back-color:rgb(240, 240, 240) ;
+    --back-color:rgb(241, 241, 241) ;
     --card-color:white; 
 
   }
@@ -45,11 +47,12 @@ li {
 }
 
 nav { box-shadow:0px 8px 6px -3px rgba(0,0,0,0.5);
-    position:sticky;
+    position:fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: rgb(107, 107, 107);
+    width: 100vw;
    height: 7vh;
    margin: 0;
 }
@@ -100,15 +103,18 @@ p {  font-family: 'Darker Grotesque', sans-serif;
 .card .buttoncard .miniatures {
     display: flex;
     justify-content: space-around;
-    background-color: rgba(137, 43, 226, 0);
+    background-color: rgba(32, 12, 50, 0);
     box-shadow: none;
    
 }
+
 .miniatures img {
     width: 20%;
     border-radius: 50%; 
-    border-color: rgb(0, 117, 0);
+    border-color: rgb(4, 176, 90);
+    border-width: 3px;
     margin: 0;
+    border-style:solid;
  
 }
 .card .buttoncard .button {
@@ -120,20 +126,28 @@ p {  font-family: 'Darker Grotesque', sans-serif;
     max-width: 30%;
     min-width: 20rem;
     height: 4rem;
+    border-color: rgb(4, 176, 90);
+    border-width: 3px;
+    
+    border-style:solid;
+   
 }
 .buttoncard {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     width: auto;
-    
+  
 }
 
 .button h2 {
     color: white ;
     font-family: 'Darker Grotesque', sans-serif;
     font-size: xx-large;
+    text-align: center;
+    align-items: center;
+
    
 }
 .avis {
@@ -149,6 +163,7 @@ p {  font-family: 'Darker Grotesque', sans-serif;
   height: auto;
   margin: 1rem;
 }
+
 .card div {
     margin-top: 1rem;
     background-color: var(--card-color);
@@ -174,7 +189,9 @@ footer{ margin-top: 1rem;
 footer p {
     color: white;
     font-size: x-small;
+
 }
+
 
 @media screen and (min-width: 800px) {
     .minimap {flex-direction: row ;}
@@ -193,6 +210,7 @@ footer p {
     }
     footer {
         display: flex;
+        justify-content: center;
     }
     .miniatures {
         justify-content:center;
@@ -200,10 +218,7 @@ footer p {
     }
     .miniatures img {
           
-           border-bottom-left-radius: 0;
-           border-bottom-right-radius: 0;
-           width: 33.7%;
-           margin-top: -1.5rem;
+        display: none;
     }
     #roulé {
         border-radius: 0;
@@ -219,9 +234,10 @@ footer p {
     }
     .buttoncard {
         background-image: url(buttonBackground.png);
-        
+        justify-content: center;
+        align-items: center;
         background-position: center;
-        background-size: 180vh;
+        background-size: 190vh;
         background-repeat: no-repeat;
     }
     .buttoncard img {
