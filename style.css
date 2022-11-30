@@ -5,6 +5,10 @@
     box-sizing: border-box;
    
 }
+a:link 
+{ 
+ text-decoration:none; 
+} 
 :root {
     --back-color:rgb(241, 241, 241) ;
     --card-color:white; 
@@ -77,6 +81,11 @@ h1 {
     color: rgb(255, 255, 255);
    font-size: larger;
    margin-top: 2rem;
+}
+.banner div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 nav p {
     color:rgb(255, 255, 255) ;
@@ -203,7 +212,20 @@ footer p {
 
 }
 
+/*carte*/
 
+.pizza-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(image1.png);
+      height: 20vh;
+      background-repeat:initial;
+       background-position:top;
+  background-size:cover;
+       box-shadow:0px 8px 6px -3px rgba(0,0,0,0.5);
+}
 
 
 
