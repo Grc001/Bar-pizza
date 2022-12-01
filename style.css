@@ -1,12 +1,14 @@
 * {
-
+padding: 0;
     margin: 0;
     list-style-type: none;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 a:link {
     text-decoration: none;
+   
 }
 
 :root {
@@ -81,7 +83,50 @@ nav {
     margin: 0;
     z-index: 99999;
 }
-
+nav a{ color: rgb(255, 255, 255);
+    text-decoration: none;
+font-size: larger;
+}
+.navlistcontainer{
+    display: none;
+    justify-content: flex-end;
+   
+}
+.list-visible {
+    display: flex;
+}
+.icon-visible {
+    color: rgba(255, 255, 255, 0.533);
+}
+.navblur {
+position: fixed;
+height:100vh ;    
+width: 100%;
+background-color: rgba(0, 255, 255, 0);
+backdrop-filter: blur(3px);
+z-index: 850;
+   
+}
+.navlistmobile {
+    display: flex;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 35%;
+    z-index: 900;
+    box-shadow: -6px 8px 6px -3px rgba(0, 0, 0, 0.5);
+ 
+}
+.navlistmobile a{ color: rgb(59, 59, 59);
+    text-decoration: none;
+font-size: larger;
+}
+.ul-mobile {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 h1 {
     text-align: center;
     font-family: 'Days One', sans-serif;
@@ -282,12 +327,13 @@ box-shadow: none;
 padding-left: 3rem;
 padding-right: 3rem;
 width: auto;
+   
 }
 #containerducontainer {
     margin-top: 3rem;
     margin-bottom: 3rem;
 overflow-x: scroll;
-}
+   }
 #containerducontainer::-webkit-scrollbar {
     display: none;
     justify-content: center;
@@ -317,7 +363,6 @@ overflow-x: scroll;
     background-position: center;
     background-size: 200%;
     box-shadow: 0px 8px 6px -3px rgba(0, 0, 0, 0.5);
-
 }
 .dessert-banner {
     display: flex;
@@ -373,9 +418,13 @@ overflow-x: scroll;
     .avis img {
         width: 60%;
     }
-
-    ul {
+    .navlistcontainer{
+        display: none;
+       
+    }
+    .ul-desktop {
         display: flex;
+        color: white;
     }
 
     .menu-burger {
@@ -435,7 +484,7 @@ overflow-x: scroll;
         display: flex;
     align-items: center;
     justify-content: center;
-    justify-content: space-around;
+
     box-shadow: none;
    flex-wrap: wrap;
     width: 100%;
@@ -448,7 +497,7 @@ overflow-x: scroll;
     }
 
     #containerducontainer {
-        justify-content: center;
+        justify-content:center;
         align-items: center;
     justify-content: initial;
     align-items: center;
@@ -461,7 +510,8 @@ overflow-x: scroll;
     .containerprincipal {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center;  
+
     }
 }
 @media screen and (max-width: 300px) {
