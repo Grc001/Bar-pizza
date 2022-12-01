@@ -514,7 +514,7 @@ overflow-x: scroll;
 
     }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 376px) {
     .avis {
         display: none;
     }
