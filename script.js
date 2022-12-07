@@ -20,7 +20,7 @@ divBlur.addEventListener("click", function () {
       pizza[i].classList.toggle("pizza-pop");
       zoomscreen.classList.toggle("zoomscreen-visible");
      let element = document.getElementById[i];
-      element.appendChild("zoomscreen");
+     
     }
     
   }

@@ -341,17 +341,9 @@ footer p {
 
 .pizza:active {
   background-color: blue;
+  
 }
-.pizza-pop{
-  z-index: 3000;
-  background-color: rgb(255, 255, 255);
-  backdrop-filter: blur(60%);
-  position: fixed;
-  top:20vh;
-  left: 38.7vw;
-  width: 80%;
-  height: 60vh;
-}
+
 
 
 
@@ -421,8 +413,22 @@ flex-direction: column;
 width: 80%;
 max-width: 500px;
 }
+@media screen and (max-width: 806px){
+.pizza-pop{
+  margin-top: 10%;
+  transform: translateY(-10%);
+  transform: translateX(-30vw);
+  z-index: 3000;
+  background-color: rgb(255, 255, 255);
+  backdrop-filter: blur(60%);
+  position: fixed;
+  top:20vh;
+  left: 38.7vw;
+  width: 80%;
+  height: 60vh;
 
-
+}
+}
 @media screen and (min-width: 806px) {
   .minimap {
     flex-direction: row;
@@ -518,6 +524,7 @@ max-width: 500px;
     width: 200px;
     margin: 1rem;
   }
+
 
   #containerducontainer {
     justify-content: center;
