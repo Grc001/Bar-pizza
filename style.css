@@ -11,7 +11,7 @@ a:link {
 }
 
 :root {
-  --back-color: rgb(241, 241, 241);
+  --back-color: rgb(215, 219, 216);
   --card-color: white;
 }
 
@@ -69,7 +69,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(107, 107, 107);
+  background-color: rgb(31, 39, 33);
   width: 100vw;
   height: 7vh;
   margin: 0;
@@ -88,7 +88,7 @@ nav a {
   display: flex;
 }
 .icon-visible {
-  color: rgba(255, 255, 255, 0.533);
+  color: rgba(244, 255, 247, 0.533);
 }
 .navblur {
   position: fixed;
@@ -266,11 +266,8 @@ footer p {
 }
 
 /*carte*/
-.degrade {
-  height: 1vh;
-  width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.729), rgba(255, 0, 43, 0));
-}
+
+
 .pizza-banner {
   display: flex;
   flex-direction: column;
@@ -300,6 +297,9 @@ footer p {
   padding-right: 3rem;
   width: auto;
 }
+
+
+
 #containerducontainer {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -323,6 +323,21 @@ footer p {
   border-radius: 2rem;
   box-shadow: 0px 8px 6px -3px rgba(0, 0, 0, 0.5);
 }
+
+.pizza:active {
+  background-color: blue;
+}
+.pizza-pop{
+  z-index: 30;
+  background-color: rgb(255, 0, 170);
+  position: fixed;
+  top:20vh;
+  left: 38.7vw;
+}
+
+
+
+
 .street-food-banner {
   display: flex;
   flex-direction: column;
@@ -334,6 +349,7 @@ footer p {
   background-position: center;
   background-size: 200%;
   box-shadow: 0px 8px 6px -3px rgba(0, 0, 0, 0.5);
+  
 }
 .dessert-banner {
   display: flex;
