@@ -69,7 +69,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(67, 78, 70);
+  background-color: rgb(32, 41, 34);
   width: 100vw;
   height: 7vh;
   margin: 0;
@@ -266,6 +266,21 @@ footer p {
 }
 
 /*carte*/
+.zoomscreen{
+  display: none;
+}
+.zoomscreen-visible{
+  z-index: 200;
+  display: initial;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(92, 92, 92, 0.411);
+  backdrop-filter: blur(50%);
+  width: 100vw;
+  height: 100vh;
+  padding: 10%;
+}
 
 
 .pizza-banner {
@@ -328,11 +343,14 @@ footer p {
   background-color: blue;
 }
 .pizza-pop{
-  z-index: 30;
-  background-color: rgb(255, 0, 170);
+  z-index: 3000;
+  background-color: rgb(255, 255, 255);
+  backdrop-filter: blur(60%);
   position: fixed;
   top:20vh;
   left: 38.7vw;
+  width: 80%;
+  height: 60vh;
 }
 
 
@@ -377,7 +395,35 @@ footer p {
   margin: 0.8rem;
 }
 
-@media screen and (min-width: 766px) {
+
+/*mon compte*/
+
+#formulaire {
+ 
+  padding-left: 10%;
+  padding-bottom: 10%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+ 
+}
+#formulaire p {
+  margin-top: 10%;
+text-align: left;
+}
+#formulaire form {
+font-family: Darker Grotesque;
+text-align: left;
+display: flex;
+flex-direction: column;
+width: 80%;
+max-width: 500px;
+}
+
+
+@media screen and (min-width: 806px) {
   .minimap {
     flex-direction: row;
     justify-content: space-between;

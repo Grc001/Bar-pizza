@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <title>Document</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Days+One&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-    
-    </head>
-    
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Days+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+</head>
+
 <body>
     <header>
         <nav>
@@ -33,26 +34,62 @@
             <div class="navblur">
 
             </div>
-      <div class="navlistmobile">
-            <ul class="ul-mobile">
-                <li><a href="index.html"> Accueil</li></a>
-                <li><a href="Carte.html">Notre Carte</li></a>
-                <li><a href="index.html">Contact</li></a>
-                <li><a href="monCompte.html">Mon compte</li></a>
+            <div class="navlistmobile">
+                <ul class="ul-mobile">
+                    <li><a href="index.html"> Accueil</li></a>
+                    <li><a href="Carte.html">Notre Carte</li></a>
+                    <li><a href="index.html">Contact</li></a>
+                    <li><a href="monCompte.html">Mon compte</li></a>
 
-            </ul>
-       </div>
-    </div>
-    <div class="pizza-banner">
-        <div>
-                 <h1>
-                     Mon Compte
-                 </h1>
+                </ul>
             </div>
- 
-         </div>     
+        </div>
+        <div class="pizza-banner">
+            <div>
+                <h1>
+                    Connexion
+                </h1>
+            </div>
+        </div>
+        <div class="card">
+            <div id="formulaire">
+                <p>Déja client ?<br>Connectez-vous :
+                <p>
+                <form action="Deja client">
+                    E-mail du compte
+                    <input type="email" name="user_mail" id="user_mail">
+                    <br>
+                    Mot de passe
+                    <input type="password" name="password" id="password">
+                </form>
+                <p>Nouveau client ? <br>
+                    Inscrivez-vous :</p>
+                <form action="Nouveau client">
+                    Nom
+                    <input type="text">
+                    <br>
+                    Prénom
+                    <input type="text">
+                    <br>
+                    Adresse e-mail
+                    <input type="email" name="new_mail" id="new_mail">
+                    <br>
+                    Adresse
+                    <input type="text" name="new_adress" id="new_adress">
+                    <br>
+                    Mot de passe
+                    <input type="password" name="New_password" id="New_password">
+                    <br>
+                    Confirmation du mot de passe
+                    <input type="password" name="New_password" id="New_password">
+
+                </form>
+            </div>
+
+
     </header>
 
     <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
