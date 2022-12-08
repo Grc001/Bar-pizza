@@ -306,6 +306,20 @@ footer p {
   display: initial;
 
 }
+.pizza .cross {
+  width: 80%;
+  display: flex;
+ justify-content: flex-end;
+}
+.fa2 {
+display: none;
+}
+.fa2-visible{
+  z-index: 300;
+  display: initial;
+    font-style: normal;
+  color: darkgrey ;
+}
 .poptext p{
   font-size: medium;
   color: darkgray;
@@ -338,8 +352,7 @@ footer p {
   align-items: center;
   justify-content: flex-start;
   box-shadow: none;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 1rem;
   width: auto;
 }
 
@@ -354,6 +367,10 @@ footer p {
   display: none;
   justify-content: center;
   margin-left: 5rem;
+}
+.image{
+  display: flex;
+  justify-content: flex-start;
 }
 .pizza {
   z-index: 3;
@@ -590,6 +607,8 @@ input {
   .zoomscreen-visible{
     display: none;
   }
+
+
 }
 @media screen and (max-width: 376px) {
   .avis {

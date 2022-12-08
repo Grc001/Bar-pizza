@@ -3,7 +3,8 @@ const list = document.querySelector(".navlistcontainer");
 const divBlur = document.querySelector(".navblur");
 const pizza = document.querySelectorAll(".pizza");
 const zoomscreen = document.querySelector(".zoomscreen");
-const poptext = document.querySelector(".poptext");
+const poptext = document.querySelectorAll(".poptext");
+const cross = document.querySelectorAll(".fa2");
  
 
 icon.addEventListener("click", function () {
@@ -17,13 +18,20 @@ divBlur.addEventListener("click", function () {
 });
   
 for (let i = 0; i < pizza.length; i++) {
-    pizza[i].onclick = function () {
-      console.log(pizza[i].id);
+    pizza[i].addEventListener("click", function () {
       pizza[i].classList.toggle("pizza-pop");
       zoomscreen.classList.toggle("zoomscreen-visible");
-     let element = document.getElementById[i];
-     pizza[i].classList.toggle("poptext-visible")
-    };
-    
-  }
+     poptext[i].classList.toggle("poptext-visible");
+     cross[i].classList.toggle("fa2-visible");
+     
   
+
+})
+};
+
+  
+  
+  
+
+
+ 
