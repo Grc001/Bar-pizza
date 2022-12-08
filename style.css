@@ -27,9 +27,9 @@ body {
   justify-content: center;
   align-items: center;
   background-image: url(image1.png);
-  height: 40vh;
+  max-height: 30rem;
   background-repeat: initial;
-  background-position: top;
+  background-position: center;
   background-size: cover;
   box-shadow: 0px 8px 6px -3px rgba(0, 0, 0, 0.5);
 }
@@ -37,6 +37,19 @@ body {
 h1 {
   font-style: var(--main-color);
   color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Days One", sans-serif;}
+h2{
+  font-style: var(--main-color);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Days One", sans-serif;
+}
+h3{
+  font-style: var(--main-color);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Days One", sans-serif;
 }
 
 ul {
@@ -50,6 +63,11 @@ li {
   margin: 2rem;
   font-family: "Darker Grotesque", sans-serif;
   font-size: 18px;
+ 
+}
+li:hover {
+text-decoration: underline;
+
 }
 
 .menu-burger {
@@ -118,10 +136,7 @@ nav a {
   flex-direction: column;
   justify-content: flex-start;
 }
-h1 {
-  text-align: center;
-  font-family: "Days One", sans-serif;
-}
+
 
 .banner p {
   text-align: center;
@@ -132,7 +147,7 @@ h1 {
 }
 
 .banner div {
-  margin-top: 15vh;
+  margin-top: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,12 +212,11 @@ iframe {
   align-items: center;
   background-color: rgb(67, 193, 124);
   margin: 3rem;
-  max-width: 30%;
+  max-width: 300px;
   min-width: 11rem;
   height: 4rem;
   border-color: rgb(4, 176, 90);
   border-width: 3px;
-
   border-style: solid;
 }
 
@@ -212,6 +226,7 @@ iframe {
   align-items: center;
   flex-direction: column;
   width: auto;
+  
 }
 
 .button h2 {
@@ -281,7 +296,22 @@ footer p {
   height: 100vh;
   padding: 10%;
 }
+.zoomscreen-visible img{
+  width: 300vh;
+}
+.poptext {
+  display: none;
+}
+.poptext-visible {
+  display: initial;
 
+}
+.poptext p{
+  font-size: medium;
+  color: darkgray;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
 
 .pizza-banner {
   display: flex;
@@ -340,7 +370,8 @@ footer p {
 }
 
 .pizza:active {
-  background-color: blue;
+  background-color: rgb(235, 235, 235);
+  transition: 5ms;
   
 }
 
@@ -357,7 +388,7 @@ footer p {
   height: 13vh;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 200%;
+  background-size: 100%;
   box-shadow: 0px 8px 6px -3px rgba(0, 0, 0, 0.5);
   
 }
@@ -369,7 +400,7 @@ footer p {
   background-image: url(dessert.png);
   height: 13vh;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   background-size: 100%;
   box-shadow: 0px 8px 6px -3px rgba(0, 0, 0, 0.5);
 }
@@ -389,6 +420,11 @@ footer p {
 
 
 /*mon compte*/
+
+#offre {
+  padding: 6vh;
+  background-color: rgb(67, 193, 124);
+}
 
 #formulaire {
  
@@ -413,6 +449,14 @@ flex-direction: column;
 width: 80%;
 max-width: 500px;
 }
+input {
+  border : none;
+  border-bottom  : 1px solid rgb(49, 124, 102);  
+  border-left: 1px solid rgb(49, 124, 102);
+  box-shadow: 0px 8px 6px -3px rgba(0, 0, 0, 0.2);
+  
+}
+
 @media screen and (max-width: 806px){
 .pizza-pop{
   margin-top: 10%;
@@ -445,7 +489,9 @@ max-width: 500px;
     width: 70%;
     height: 15rem;
   }
-
+  .card .buttoncard .miniatures {
+    display: none;
+  }
   .avis {
     flex-direction: row;
   }
@@ -498,11 +544,11 @@ max-width: 500px;
   }
 
   .buttoncard {
-    background-image: url(buttonBackground.jpg);
+    background-image: url(buttonBackground.png);
 
     justify-content: center;
     align-items: center;
-    background-position: cover;
+    background-position: bottom;
     background-size: 80vw;
     background-repeat: no-repeat;
   }
@@ -540,6 +586,9 @@ max-width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .zoomscreen-visible{
+    display: none;
   }
 }
 @media screen and (max-width: 376px) {
