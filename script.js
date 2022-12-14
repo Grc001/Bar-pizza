@@ -23,7 +23,7 @@ for (let i = 0; i < pizza.length; i++) {
     zoomscreen.classList.toggle("zoomscreen-visible");
     poptext[i].classList.toggle("poptext-visible");
     cross[i].classList.toggle("fa2-visible");
-    cross[i].classList.toggle(pizza[i]);
+   // cross[i].classList.toggle(pizza[i]);
   });
 }
 

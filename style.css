@@ -26,7 +26,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(image1.png);
+  background-image: url(medias/image1.png);
   max-height: 30rem;
   background-repeat: initial;
   background-position: center;
@@ -51,6 +51,11 @@ h3 {
   color: rgb(255, 255, 255);
   text-align: center;
   font-family: "Days One", sans-serif;
+}
+h4 {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: x-large;
+  color: black;
 }
 
 ul {
@@ -160,6 +165,7 @@ nav p {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 p {
@@ -194,13 +200,14 @@ iframe {
 }
 
 .miniatures img {
-  width: 20%;
+  width: 30%;
   border-radius: 50%;
   border-color: rgb(4, 176, 90);
   border-width: 3px;
   margin: 0;
   border-style: solid;
-  min-width: 3.8rem;
+  min-width: 60px;
+
 }
 
 .card .buttoncard .button {
@@ -210,8 +217,7 @@ iframe {
   align-items: center;
   background-color: rgb(67, 193, 124);
   margin: 3rem;
-  max-width: 300px;
-  min-width: 11rem;
+ max-width: 350px;
   height: 4rem;
   border-color: rgb(4, 176, 90);
   border-width: 3px;
@@ -242,8 +248,8 @@ iframe {
 .avis img {
   display: flex;
   justify-content: space-around;
-  width: 90%;
-  min-height: 6rem;
+  width: 50%;
+ max-width: 30rem;
 
   margin: 1rem;
 }
@@ -255,6 +261,7 @@ iframe {
   border-radius: 2rem;
   padding: 0.3rem;
   box-shadow: 0px 8px 6px -3px rgba(0, 0, 0, 0.5);
+
 }
 
 .googlemap {
@@ -323,7 +330,7 @@ footer p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(image1.png);
+  background-image: url(medias/image1.png);
   height: 20vh;
   background-repeat: initial;
   background-position: top;
@@ -385,7 +392,7 @@ footer p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(buttonBackground.png);
+  background-image: url(medias/buttonBackground.png);
   height: 13vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -397,7 +404,7 @@ footer p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(dessert.png);
+  background-image: url(medias/dessert.png);
   height: 13vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -452,6 +459,20 @@ input {
   border-left: 1px solid rgb(49, 124, 102);
   box-shadow: 0px 8px 6px -3px rgba(0, 0, 0, 0.2);
 }
+/* contacts */
+#contacts {
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#socials {
+  width: 6rem;
+  margin: 1rem;
+}
+
 
 @media screen and (max-width: 806px) {
   .pizza-pop {
@@ -493,12 +514,17 @@ input {
   .card .buttoncard .miniatures {
     display: none;
   }
-  .avis {
-    flex-direction: row;
-  }
+ 
+   .avis {
+display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+  
 
   .avis img {
     width: 60%;
+    max-width: 300px;
   }
   .navlistcontainer {
     display: none;
@@ -545,7 +571,7 @@ input {
   }
 
   .buttoncard {
-    background-image: url(buttonBackground.png);
+    background-image: url(medias/buttonBackground.png);
 
     justify-content: center;
     align-items: center;
@@ -557,6 +583,7 @@ input {
   .buttoncard img {
     display: none;
   }
+
   #scroll-container-1 {
     display: flex;
     align-items: center;
@@ -591,6 +618,12 @@ input {
     display: none;
   }
 }
+
+@media screen and (max-width: 414px) {
+#insta {
+  display: none;
+}}
+
 @media screen and (max-width: 376px) {
   .avis {
     display: none;
