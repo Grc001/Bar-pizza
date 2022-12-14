@@ -43,6 +43,10 @@ h1 {
   text-align: center;
   font-family: "Days One", sans-serif;
 }
+.title {
+  display: flex;
+  flex-direction: column;
+}
 
 h2 {
   font-style: var(--main-color);
