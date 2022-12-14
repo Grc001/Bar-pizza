@@ -218,6 +218,8 @@ iframe {
   background-color: rgb(67, 193, 124);
   margin: 3rem;
  max-width: 350px;
+ width: 80%;
+ min-width: 180px;
   height: 4rem;
   border-color: rgb(4, 176, 90);
   border-width: 3px;
