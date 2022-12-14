@@ -632,13 +632,12 @@ display: flex;
   }
 }
 
-@media screen and (max-width: 414px) {
-#insta {
-  display: none;
-}}
 
 @media screen and (max-width: 376px) {
   .avis {
     display: none;
   }
+  #insta {
+  display: none;
+}
 }
